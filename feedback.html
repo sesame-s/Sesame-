@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>W</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Warner Bros</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="tv_shows.html">TV Shows</a></li>
+                    <li><a href="games&apps.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+					<li><a class="active" href="#">Feedback</a></li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpeg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    #thank-you {
+        display: none;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f2f2f2;
+        border-radius: 4px;
+    }
+	    /* Footer Styles */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Social Media Icons Styles */
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: #ddd;
+        }
+        
+        /* Icon Styles */
+        .fa {
+            font-size: 20px;
+        }
+  
+    
+</style>
+</head>
+<body>
+
+<div id="feedbacks">
+    <h2 align="center">Feedbacks</h2>
+    <form id="feedback-form">
+  
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+<div id="thank-you">
+    <p>Thank you for your feedback!</p>
+</div>
+
+<script>
+    document.getElementById('feedback-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Here you can add your code to submit the form data to the server if needed
+        // For now, let's just show the thank you message
+        document.getElementById('feedback-form').style.display = 'none';
+        document.getElementById('thank-you').style.display = 'block';
+    });
+</script>
+
+      
+</head>
+
+      
+<footer>
+    <div>Follow us on social media:</div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook" ></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+</footer>
+
+<!-- Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
